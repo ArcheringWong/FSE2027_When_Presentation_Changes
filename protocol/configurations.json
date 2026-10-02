@@ -1,0 +1,70 @@
+{
+  "conditions": {
+    "P": "primary neutral order",
+    "R": "reserve neutral order",
+    "P_prime": "byte-identical repeat of P",
+    "R_prime": "byte-identical repeat of R"
+  },
+  "models": [
+    {
+      "model": "Qwen",
+      "requested_model": "qwen3.7-plus-2026-05-26",
+      "collection": "neutral pair then later exact repeats",
+      "thinking": "disabled"
+    },
+    {
+      "model": "DeepSeek",
+      "requested_model": "deepseek-v4-pro",
+      "collection": "neutral pair then later exact repeats",
+      "thinking": "disabled"
+    },
+    {
+      "model": "Mistral",
+      "requested_model": "mistralai/mistral-large-2512",
+      "collection": "one interleaved execution wave",
+      "router": "OpenRouter",
+      "upstream": "Mistral",
+      "provider_slug": "mistral/zdr",
+      "allow_fallbacks": false,
+      "reasoning": "standard non-reasoning; prompt_mode and reasoning_effort omitted"
+    }
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 20260830,
+    "max_tokens": 512,
+    "stream": false,
+    "tools": false
+  },
+  "compiler": {
+    "policy": "medium",
+    "target_utf8_bytes": 48000,
+    "max_whole_units": 96,
+    "topology_node_cap": 32,
+    "topology_directed_edge_cap": 64,
+    "further_client_side_truncation": false
+  },
+  "order": {
+    "P_seed": 20260829,
+    "R_seed": 20260830,
+    "algorithm": "random.Random(f\"{seed}:{dataset}:{case_id}\").shuffle(all selected units)"
+  },
+  "split": {
+    "seed": 20260829,
+    "strata": [
+      "dataset",
+      "fault_group",
+      "entity_level"
+    ],
+    "ordering": "SHA256(seed|stratum|case_id)",
+    "development_count": "round(0.2*n), minimum one when n>=3, zero when n<3"
+  },
+  "boundary": {
+    "temporal_delta_seconds": 604800,
+    "reference": "compiler-ranked view and its exact repeat",
+    "estimator": "transformed-reference disagreement minus repeat-reference disagreement",
+    "bootstrap_seed": 20260905,
+    "bootstrap_replicates": 10000
+  }
+}

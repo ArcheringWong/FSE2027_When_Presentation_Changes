@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" role="img" aria-labelledby="title desc">
+<title id="title">Per-incident two-view, two-call protocol</title><desc id="desc">P and R are diagnosis-equivalent neutral presentations; P-prime repeats P and R-prime repeats R. A and B compare views; C and D compare exact-input calls.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#17232d}.muted{fill:#52606c}.grid{stroke:#dce2e6;stroke-width:1}</style>
+<rect width="940" height="600" fill="white"/>
+<text x="34" y="40" font-size="24" >Per-incident protocol</text>
+<text x="34" y="70" font-size="16" class="muted">Selected typed evidence multiset preserved across the two neutral views</text>
+<text x="250" y="117" font-size="18" text-anchor="middle">View P</text>
+<text x="690" y="117" font-size="18" text-anchor="middle">View R</text>
+<rect x="130" y="145" width="240" height="110" rx="8" fill="#f3f6f8" stroke="#aebdc7"/>
+<text x="250" y="180" font-size="26" text-anchor="middle" font-weight="bold">P</text>
+<text x="250" y="209" font-size="15" text-anchor="middle">Primary neutral order</text>
+<text x="250" y="233" font-size="14" text-anchor="middle" class="muted">First call</text>
+<rect x="570" y="145" width="240" height="110" rx="8" fill="#f3f6f8" stroke="#aebdc7"/>
+<text x="690" y="180" font-size="26" text-anchor="middle" font-weight="bold">R</text>
+<text x="690" y="209" font-size="15" text-anchor="middle">Reserve neutral order</text>
+<text x="690" y="233" font-size="14" text-anchor="middle" class="muted">First call</text>
+<rect x="130" y="345" width="240" height="110" rx="8" fill="#f3f6f8" stroke="#aebdc7"/>
+<text x="250" y="380" font-size="26" text-anchor="middle" font-weight="bold">P&#x27;</text>
+<text x="250" y="409" font-size="15" text-anchor="middle">Byte-identical P input</text>
+<text x="250" y="433" font-size="14" text-anchor="middle" class="muted">Exact repeat</text>
+<rect x="570" y="345" width="240" height="110" rx="8" fill="#f3f6f8" stroke="#aebdc7"/>
+<text x="690" y="380" font-size="26" text-anchor="middle" font-weight="bold">R&#x27;</text>
+<text x="690" y="409" font-size="15" text-anchor="middle">Byte-identical R input</text>
+<text x="690" y="433" font-size="14" text-anchor="middle" class="muted">Exact repeat</text>
+<line x1="382" y1="200" x2="558" y2="200" stroke="#27628f" stroke-width="3"/>
+<text x="470" y="186" font-size="17" text-anchor="middle">A: P != R</text>
+<text x="470" y="224" font-size="14" text-anchor="middle" class="muted">Cross-view</text>
+<line x1="382" y1="400" x2="558" y2="400" stroke="#27628f" stroke-width="3"/>
+<text x="470" y="386" font-size="17" text-anchor="middle">B: P&#x27; != R&#x27;</text>
+<text x="470" y="424" font-size="14" text-anchor="middle" class="muted">Cross-view</text>
+<line x1="250" y1="263" x2="250" y2="337" stroke="#647d71" stroke-width="3"/>
+<rect x="158" y="280" width="184" height="34" fill="white"/>
+<text x="250" y="302" font-size="17" text-anchor="middle">C: P != P&#x27;</text>
+<line x1="690" y1="263" x2="690" y2="337" stroke="#647d71" stroke-width="3"/>
+<rect x="598" y="280" width="184" height="34" fill="white"/>
+<text x="690" y="302" font-size="17" text-anchor="middle">D: R != R&#x27;</text>
+<text x="470" y="503" font-size="20" text-anchor="middle" font-weight="bold">Per-incident contrast: (A + B - C - D) / 2</text>
+<text x="470" y="534" font-size="16" text-anchor="middle">Compute each dataset mean, then average the two datasets equally.</text>
+<text x="470" y="568" font-size="14" text-anchor="middle" class="muted">Qwen / DeepSeek: pairs and repeats across periods. Mistral: all four calls interleaved in one wave.</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "942ce2356948c369272e6ef4af0277b38f55443c165c9b78162d1589053c668b",
+  "rows": [
+    {
+      "dataset": "AIOps2025",
+      "case_id": "55759137-403",
+      "accepted_set_size": 3
+    },
+    {
+      "dataset": "AIOps2025",
+      "case_id": "dc62e30c-113",
+      "accepted_set_size": 3
+    }
+  ]
+}

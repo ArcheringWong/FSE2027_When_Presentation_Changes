@@ -1,0 +1,102 @@
+{
+  "selection_rule": "Within Mistral, select one correctness-discordant case and one both-wrong case. Prefer cases with a uniquely resolved service identity for both verdicts, complete archived responses, and a verified full evidence multiset. Choose the lexicographically first (dataset, case_id) among eligible cases. If a stratum has no fully resolved service pair, use the first type-resolved pair and retain unknown service status. Service relation direction, type difference, severity and positional displacement do not rank cases.",
+  "archived_mistral_response_and_preservation_checks": {
+    "cohort_incidents": 119,
+    "responses": 476,
+    "note": "These checks were performed in the archived full-input analysis. This compact package checks the exported rows and excerpts, not all original requests."
+  },
+  "selections": [
+    {
+      "illustration_kind": "correctness_discordant",
+      "preferred_service_resolved": true,
+      "candidate_incidents": [
+        {
+          "dataset": "AIOps2025",
+          "case_id": "11f619f0-285"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "1c4a277a-491"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "53ab3ccb-326"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "aba2da7f-368"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "aceeda23-570"
+        }
+      ],
+      "selected": {
+        "dataset": "AIOps2025",
+        "case_id": "11f619f0-285"
+      }
+    },
+    {
+      "illustration_kind": "both_wrong",
+      "preferred_service_resolved": true,
+      "candidate_incidents": [
+        {
+          "dataset": "AIOps2025",
+          "case_id": "0b81a605-339"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "0fccdcad-125"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "27914c5a-288"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "45c7bf97-487"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "499d8ec0-211"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "5d97906f-213"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "68bbf4fd-332"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "7bdc4b83-164"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "a0d5329b-489"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "ac9112a4-420"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "c730da7b-260"
+        },
+        {
+          "dataset": "AIOps2025",
+          "case_id": "e1562aa2-335"
+        },
+        {
+          "dataset": "RCA100",
+          "case_id": "t066"
+        }
+      ],
+      "selected": {
+        "dataset": "AIOps2025",
+        "case_id": "0b81a605-339"
+      }
+    }
+  ]
+}

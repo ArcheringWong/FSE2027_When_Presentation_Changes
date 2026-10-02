@@ -1,0 +1,329 @@
+<!doctype html><html lang='en'><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Two Mistral case illustrations</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;color:#16212b;max-width:1080px;margin:32px auto;padding:0 20px}section{border:1px solid #bac2c8;padding:24px;margin:24px 0;border-radius:6px}h1,h2,h3{line-height:1.2}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{padding:9px 10px;border-bottom:1px solid #dce1e4;text-align:left;vertical-align:top}th{background:#f1f4f6}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}details{margin:16px 0}code{font-family:ui-monospace,monospace}small{color:#465260}@media print{section{break-inside:avoid}body{margin:0}}</style>
+<h1>Two Mistral case illustrations</h1>
+<p>Each view has one exact repeat. C and W denote archived benchmark-correct and benchmark-wrong outcomes. Positions are one-based. The trace rows use the manuscript display rule: for each selected service, choose the cited trace with the largest count, breaking ties by its content hash.</p>
+<section><h2>Different correctness</h2>
+<p><strong>AIOps2025: 11f619f0-285</strong><br>
+A fault occurred from 2025-06-14T09:10:35Z to 2025-06-14T09:32:35Z. Please identify the root cause.</p>
+<p>The archived P and R inputs each contain 61 evidence units. This package contains the 6 units cited by at least one of the four outputs.</p>
+<table><thead><tr><th>Retained trace (source to target)</th><th>Count</th><th>Error rate</th><th>P position</th><th>R position</th></tr></thead><tbody>
+<tr><td>ListRecommendations (E007 to E007)</td><td>12</td><td>1.00</td><td>17</td><td>7</td></tr>
+<tr><td>GetProduct (E052 to E034)</td><td>29</td><td>1.00</td><td>50</td><td>1</td></tr>
+</tbody></table><table><thead><tr><th>Call</th><th>Root verdict</th><th>Correctness</th><th>Self-reported confidence</th><th>Cited handles</th></tr></thead><tbody>
+<tr><td>P</td><td>E001 — recommendationservice-2 (pod)</td><td>W</td><td>0.9</td><td>O036, O017, O050</td></tr>
+<tr><td>P_prime</td><td>E001 — recommendationservice-2 (pod)</td><td>W</td><td>0.95</td><td>O002, O017, O036</td></tr>
+<tr><td>R</td><td>E034 — productcatalogservice (service)</td><td>C</td><td>0.9</td><td>O001, O010, O052</td></tr>
+<tr><td>R_prime</td><td>E034 — productcatalogservice (service)</td><td>C</td><td>0.9</td><td>O001, O010, O052</td></tr>
+</tbody></table><p><strong>Resolved services:</strong> recommendationservice (E007) / productcatalogservice (E034)</p>
+<details><summary>All four recorded explanations</summary>
+<h3>P</h3><p>The root cause is likely the recommendationservice pod (E001) due to repeated RPC connection errors and a Python gRPC server exception, causing downstream failures in product retrieval and recommendations.</p>
+<h3>R</h3><p>The root cause is likely the productcatalogservice pod (E002) or its underlying service (E034), as multiple frontend pods (E027, E040, E048) report connection refused errors when attempting to retrieve product data. The trace evidence (O001, O052) also shows a 100% error rate for GetProduct operations targeting the productcatalogservice.</p>
+<h3>P_prime</h3><p>The root cause is likely the recommendationservice pod (E001) due to repeated RPC connection errors and a trace showing 100% error rate in ListRecommendations calls. Logs from frontend pods indicate connection refusals to recommendationservice, and the error log from E001 confirms a gRPC server issue.</p>
+<h3>R_prime</h3><p>The root cause is likely the productcatalogservice pod (E002) or its associated service (E034), as multiple frontend pods (E027, E040, E048) report connection refused errors when attempting to retrieve product data. The trace evidence (O001, O052) also shows a 100% error rate for the GetProduct operation targeting the productcatalogservice.</p>
+</details><details><summary>All cited input units and their P/R positions</summary>
+<h3>O036 in P; O006 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;log_level&quot;: &quot;unknown&quot;,
+    &quot;temporal_burst_score&quot;: 1000000000.0
+  },
+  &quot;canonical_entity_id&quot;: &quot;E001&quot;,
+  &quot;count&quot;: 1,
+  &quot;modality&quot;: &quot;log&quot;,
+  &quot;name&quot;: &quot;log_template&quot;,
+  &quot;numeric_summary&quot;: {},
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 1000000001.0,
+  &quot;source_observation_count&quot;: 1,
+  &quot;source_provenance_hash&quot;: &quot;3d8f3d06c648bce9db7197554a024505566f3d6547bd0953e53209cd7fa1bda2&quot;,
+  &quot;target_entity_id&quot;: null,
+  &quot;text_summary&quot;: &quot;File \&quot;/usr/local/lib/python3.&lt;NUM&gt;/site-packages/grpc/_server.py\&quot;, line &lt;NUM&gt;, in _call_behavior&quot;,
+  &quot;time_end_ns&quot;: 1749892242872000000,
+  &quot;time_start_ns&quot;: 1749892242872000000
+}</pre>
+<h3>O039 in P; O010 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;log_level&quot;: &quot;unknown&quot;,
+    &quot;temporal_burst_score&quot;: 1000000000.0
+  },
+  &quot;canonical_entity_id&quot;: &quot;E048&quot;,
+  &quot;count&quot;: 1,
+  &quot;modality&quot;: &quot;log&quot;,
+  &quot;name&quot;: &quot;log_template&quot;,
+  &quot;numeric_summary&quot;: {},
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 1000000003.0,
+  &quot;source_observation_count&quot;: 1,
+  &quot;source_provenance_hash&quot;: &quot;208d5d9e03e5ddb54846ce904fcd5ea0e4490621d74d61b7f7b2dce341a424e7&quot;,
+  &quot;target_entity_id&quot;: null,
+  &quot;text_summary&quot;: &quot;{\&quot;error\&quot;:\&quot;could not retrieve product: rpc error: code = Unavailable desc = connection error: desc = \\\&quot;transport: Error while dialing dial tcp &lt;IP&gt;:&lt;NUM&gt;: connect: connection refused\\\&quot;\&quot;,\&quot;http.req.id\&quot;:\&quot;&lt;HEX&gt;&lt;NUM&gt;a6&lt;NUM&gt;cbe-&lt;NUM&gt;a3&lt;NUM&gt;-&lt;HEX&gt;\&quot;,\&quot;http.req.method\&quot;:\&quot;POST\&quot;,\&quot;http.req.path\&quot;:\&quot;/cart\&quot;,\&quot;message\&quot;:\&quot;request error\&quot;,\&quot;session\&quot;:\&quot;&lt;HEX&gt;&lt;NUM&gt;&lt;NUM&gt;d1a-&lt;NUM&gt;b2&lt;NUM&gt;-&lt;HEX&gt;\&quot;,\&quot;severity\&quot;:\&quot;error\&quot;,\&quot;timestamp\&quot;:\&quot;&lt;NUM&gt;&lt;NUM&gt;&lt;NUM&gt;T0&lt;NUM&gt;:&lt;NUM&gt;:&lt;NUM&gt;Z\&quot;}&quot;,
+  &quot;time_end_ns&quot;: 1749892797566000000,
+  &quot;time_start_ns&quot;: 1749892797566000000
+}</pre>
+<h3>O002 in P; O009 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E052&quot;,
+  &quot;count&quot;: 5,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;hipstershop.RecommendationService/ListRecommendations&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 1.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 15.0,
+  &quot;source_observation_count&quot;: 5,
+  &quot;source_provenance_hash&quot;: &quot;95d8b253c13d188ef559c8abe5542d7c09eee518e5088ae19bd615975c653fc6&quot;,
+  &quot;target_entity_id&quot;: &quot;E007&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1749893486703000000,
+  &quot;time_start_ns&quot;: 1749892478490000000
+}</pre>
+<h3>O015 in P; O052 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E052&quot;,
+  &quot;count&quot;: 6,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;hipstershop.ProductCatalogService/ListProducts&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 1.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 16.0,
+  &quot;source_observation_count&quot;: 6,
+  &quot;source_provenance_hash&quot;: &quot;03c97a04b19d4e0c16ece3a8e8a7e8ae00aea3f5cf082dde46b080e164ae183c&quot;,
+  &quot;target_entity_id&quot;: &quot;E034&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1749893529805000000,
+  &quot;time_start_ns&quot;: 1749892521213000000
+}</pre>
+<h3>O050 in P; O001 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E052&quot;,
+  &quot;count&quot;: 29,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;hipstershop.ProductCatalogService/GetProduct&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 1.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 39.0,
+  &quot;source_observation_count&quot;: 29,
+  &quot;source_provenance_hash&quot;: &quot;9c6949cba7fb05d02aec3ff9ddc83bf2ebca5b6980e3e8e2409c208cd5fd847f&quot;,
+  &quot;target_entity_id&quot;: &quot;E034&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1749893447064000000,
+  &quot;time_start_ns&quot;: 1749892279737000000
+}</pre>
+<h3>O017 in P; O007 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E007&quot;,
+  &quot;count&quot;: 12,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;/hipstershop.RecommendationService/ListRecommendations&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 1.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 22.0,
+  &quot;source_observation_count&quot;: 12,
+  &quot;source_provenance_hash&quot;: &quot;2a70ea6d2e9a0f8d9ae37ffde3174ea797a2f0e28137549d30aff6cc0c68091e&quot;,
+  &quot;target_entity_id&quot;: &quot;E007&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1749893351407000000,
+  &quot;time_start_ns&quot;: 1749892248874000000
+}</pre>
+</details></section>
+<section><h2>Different wrong services</h2>
+<p><strong>AIOps2025: 0b81a605-339</strong><br>
+A fault occurred from 2025-06-17T20:10:05Z to 2025-06-17T20:24:05Z. Please identify the root cause.</p>
+<p>The archived P and R inputs each contain 66 evidence units. This package contains the 8 units cited by at least one of the four outputs.</p>
+<table><thead><tr><th>Retained trace (source to target)</th><th>Count</th><th>Error rate</th><th>P position</th><th>R position</th></tr></thead><tbody>
+<tr><td>GetProduct (E027 to E003)</td><td>46</td><td>0.00</td><td>40</td><td>27</td></tr>
+<tr><td>HGET (E013 to E013)</td><td>10</td><td>0.00</td><td>59</td><td>5</td></tr>
+</tbody></table><table><thead><tr><th>Call</th><th>Root verdict</th><th>Correctness</th><th>Self-reported confidence</th><th>Cited handles</th></tr></thead><tbody>
+<tr><td>P</td><td>E003 — productcatalogservice (service)</td><td>W</td><td>0.85</td><td>O040, O002, O025</td></tr>
+<tr><td>P_prime</td><td>E003 — productcatalogservice (service)</td><td>W</td><td>0.85</td><td>O040, O002, O017</td></tr>
+<tr><td>R</td><td>E013 — redis (service)</td><td>W</td><td>0.85</td><td>O005, O001, O002</td></tr>
+<tr><td>R_prime</td><td>E013 — redis (service)</td><td>W</td><td>0.85</td><td>O005, O001, O030</td></tr>
+</tbody></table><p><strong>Resolved services:</strong> productcatalogservice (E003) / redis (E013)</p>
+<details><summary>All four recorded explanations</summary>
+<h3>P</h3><p>The evidence shows repeated high-volume trace calls from the frontend service (E027) to the productcatalogservice (E003) with no errors, alongside debug logs from frontend pods indicating failed or delayed product page requests. This suggests a bottleneck or failure in productcatalogservice.</p>
+<h3>R</h3><p>The Redis service (E013) shows repeated HGET operations with no errors, but the cart-related logs (O001, O002, O030) indicate multiple GetCartAsync calls with different userIDs, suggesting potential latency or performance issues in Redis cart data retrieval.</p>
+<h3>P_prime</h3><p>The evidence shows repeated high-volume trace calls from the frontend service (E027) to the productcatalogservice (E003) with no errors, but logs from frontend pods (e.g., E021) indicate failed or delayed product page requests, suggesting the productcatalogservice is the root cause of degraded performance.</p>
+<h3>R_prime</h3><p>The Redis service (E013) shows repeated HGET operations with no errors, but the cart-related logs (O001, O002, O030) indicate multiple GetCartAsync calls with different userIDs, suggesting potential issues with cart data retrieval. This points to Redis as the likely root cause for cart-related inconsistencies.</p>
+</details><details><summary>All cited input units and their P/R positions</summary>
+<h3>O022 in P; O002 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;log_level&quot;: &quot;unknown&quot;,
+    &quot;temporal_burst_score&quot;: 1000000000.0
+  },
+  &quot;canonical_entity_id&quot;: &quot;E030&quot;,
+  &quot;count&quot;: 1,
+  &quot;modality&quot;: &quot;log&quot;,
+  &quot;name&quot;: &quot;log_template&quot;,
+  &quot;numeric_summary&quot;: {},
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 1000000001.0,
+  &quot;source_observation_count&quot;: 1,
+  &quot;source_provenance_hash&quot;: &quot;93ad052fb3dad0103a4c826858eaab13179acae2a961f5764a83720e95d4a575&quot;,
+  &quot;target_entity_id&quot;: null,
+  &quot;text_summary&quot;: &quot;GetCartAsync called with userId=&lt;HEX&gt;&lt;NUM&gt;c5&lt;NUM&gt;b1-aee2-&lt;HEX&gt;&quot;,
+  &quot;time_end_ns&quot;: 1750191501068000000,
+  &quot;time_start_ns&quot;: 1750191501068000000
+}</pre>
+<h3>O059 in P; O005 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E013&quot;,
+  &quot;count&quot;: 10,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;HGET&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 0.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 10.0,
+  &quot;source_observation_count&quot;: 10,
+  &quot;source_provenance_hash&quot;: &quot;7fb0d4c077d0142835acb813c03529ee3d11d531c08f9ed9ab87eb1778541b16&quot;,
+  &quot;target_entity_id&quot;: &quot;E013&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1750191815206000000,
+  &quot;time_start_ns&quot;: 1750191016895000000
+}</pre>
+<h3>O040 in P; O027 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E027&quot;,
+  &quot;count&quot;: 46,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;hipstershop.ProductCatalogService/GetProduct&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 0.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 46.0,
+  &quot;source_observation_count&quot;: 46,
+  &quot;source_provenance_hash&quot;: &quot;49a3322269dd5aa906fb4cea09565ba990576d9774a02d4d3407e415a43ea64e&quot;,
+  &quot;target_entity_id&quot;: &quot;E003&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1750191820717000000,
+  &quot;time_start_ns&quot;: 1750191010179000000
+}</pre>
+<h3>O002 in P; O035 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E003&quot;,
+  &quot;count&quot;: 44,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;hipstershop.ProductCatalogService/GetProduct&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 0.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 44.0,
+  &quot;source_observation_count&quot;: 44,
+  &quot;source_provenance_hash&quot;: &quot;c0f0b954adb8d5e176bcd0cc46b999371cd15c09898c31480b4cd36034582122&quot;,
+  &quot;target_entity_id&quot;: &quot;E003&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1750191838845000000,
+  &quot;time_start_ns&quot;: 1750191006867000000
+}</pre>
+<h3>O020 in P; O030 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;log_level&quot;: &quot;unknown&quot;,
+    &quot;temporal_burst_score&quot;: 1000000000.0
+  },
+  &quot;canonical_entity_id&quot;: &quot;E009&quot;,
+  &quot;count&quot;: 1,
+  &quot;modality&quot;: &quot;log&quot;,
+  &quot;name&quot;: &quot;log_template&quot;,
+  &quot;numeric_summary&quot;: {},
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 1000000001.0,
+  &quot;source_observation_count&quot;: 1,
+  &quot;source_provenance_hash&quot;: &quot;2cb61f788be87f3e031aa7b6ad79e26859cce4301858f69dc5f41a77d85618e9&quot;,
+  &quot;target_entity_id&quot;: null,
+  &quot;text_summary&quot;: &quot;GetCartAsync called with userId=&lt;HEX&gt;&lt;NUM&gt;c-&lt;NUM&gt;a6&lt;NUM&gt;&lt;NUM&gt;-&lt;HEX&gt;&quot;,
+  &quot;time_end_ns&quot;: 1750191168320000000,
+  &quot;time_start_ns&quot;: 1750191168320000000
+}</pre>
+<h3>O017 in P; O063 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;aggregation&quot;: &quot;entity_edge_operation&quot;,
+    &quot;latency_unit&quot;: &quot;source_specific_unmodified&quot;
+  },
+  &quot;canonical_entity_id&quot;: &quot;E015&quot;,
+  &quot;count&quot;: 2,
+  &quot;modality&quot;: &quot;trace&quot;,
+  &quot;name&quot;: &quot;hipstershop.ProductCatalogService/GetProduct&quot;,
+  &quot;numeric_summary&quot;: {
+    &quot;error_rate&quot;: 0.0
+  },
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 2.0,
+  &quot;source_observation_count&quot;: 2,
+  &quot;source_provenance_hash&quot;: &quot;616de6412a383c1d92baa778921d70074787ab37745deb7e2378d5fcf3f75d7d&quot;,
+  &quot;target_entity_id&quot;: &quot;E003&quot;,
+  &quot;text_summary&quot;: null,
+  &quot;time_end_ns&quot;: 1750191561023000000,
+  &quot;time_start_ns&quot;: 1750191180345000000
+}</pre>
+<h3>O025 in P; O003 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;log_level&quot;: &quot;unknown&quot;,
+    &quot;temporal_burst_score&quot;: 1000000000.0
+  },
+  &quot;canonical_entity_id&quot;: &quot;E010&quot;,
+  &quot;count&quot;: 1,
+  &quot;modality&quot;: &quot;log&quot;,
+  &quot;name&quot;: &quot;log_template&quot;,
+  &quot;numeric_summary&quot;: {},
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 1000000001.0,
+  &quot;source_observation_count&quot;: 1,
+  &quot;source_provenance_hash&quot;: &quot;07948ceafa2d66b053b99cbd905d814a7404a147d223c2db4bfeddef232dfe8c&quot;,
+  &quot;target_entity_id&quot;: null,
+  &quot;text_summary&quot;: &quot;{\&quot;http.req.id\&quot;:\&quot;&lt;HEX&gt;&lt;NUM&gt;c4&lt;NUM&gt;cde-a1f7-&lt;HEX&gt;\&quot;,\&quot;http.req.method\&quot;:\&quot;GET\&quot;,\&quot;http.req.path\&quot;:\&quot;/product/&lt;NUM&gt;PUK6V6EV0\&quot;,\&quot;http.resp.bytes\&quot;:&lt;NUM&gt;,\&quot;http.resp.status\&quot;:&lt;NUM&gt;,\&quot;http.resp.took_ms\&quot;:&lt;NUM&gt;,\&quot;message\&quot;:\&quot;request complete\&quot;,\&quot;session\&quot;:\&quot;&lt;HEX&gt;-cb1&lt;NUM&gt;&lt;NUM&gt;b6&lt;NUM&gt;c9&lt;NUM&gt;-&lt;HEX&gt;\&quot;,\&quot;severity\&quot;:\&quot;debug\&quot;,\&quot;timestamp\&quot;:\&quot;&lt;NUM&gt;&lt;NUM&gt;&lt;NUM&gt;T2&lt;NUM&gt;:&lt;NUM&gt;:&lt;NUM&gt;Z\&quot;}&quot;,
+  &quot;time_end_ns&quot;: 1750191251498000000,
+  &quot;time_start_ns&quot;: 1750191251498000000
+}</pre>
+<h3>O008 in P; O001 in R</h3><pre>{
+  &quot;attributes&quot;: {
+    &quot;log_level&quot;: &quot;unknown&quot;,
+    &quot;temporal_burst_score&quot;: 1000000000.0
+  },
+  &quot;canonical_entity_id&quot;: &quot;E057&quot;,
+  &quot;count&quot;: 1,
+  &quot;modality&quot;: &quot;log&quot;,
+  &quot;name&quot;: &quot;log_template&quot;,
+  &quot;numeric_summary&quot;: {},
+  &quot;peak_timestamp_ns&quot;: null,
+  &quot;public_rank_score&quot;: 1000000001.0,
+  &quot;source_observation_count&quot;: 1,
+  &quot;source_provenance_hash&quot;: &quot;0d9e4fb1b9c8fbc64acb6ebd03a90dbe8e0bf88f0050b0acc35db07b738be5fb&quot;,
+  &quot;target_entity_id&quot;: null,
+  &quot;text_summary&quot;: &quot;GetCartAsync called with userId=&lt;HEX&gt;&lt;NUM&gt;b8&lt;NUM&gt;&lt;NUM&gt;c5-b0fa-&lt;HEX&gt;&quot;,
+  &quot;time_end_ns&quot;: 1750191802071000000,
+  &quot;time_start_ns&quot;: 1750191802071000000
+}</pre>
+</details></section>
+<p><small>The displayed scores are reproduced from archived evaluations. Accepted-answer sets and full telemetry are not included. The excerpt hashes and citation-to-content mappings can be checked locally. Full-input preservation was checked in the archived analysis. Dataset excerpts: AIOps Challenge 2025 Dataset © 2025 Dan Pei, CC BY-NC 4.0. See the package's third-party notices for sources and modifications.</small></p></html>

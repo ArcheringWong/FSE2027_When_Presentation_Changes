@@ -1,0 +1,65 @@
+[
+  {
+    "module": "evidence/compiler.py",
+    "source_sha256": "830259980da183a2a96d6e1340657ac6093ad64661b658c88a49ca47fb4a49c5",
+    "definitions": [
+      "estimate_sizes",
+      "compile_evidence_units",
+      "compile_bounded_views"
+    ]
+  },
+  {
+    "module": "evidence/ranking.py",
+    "source_sha256": "93f1afa48404c91acd43f1bdfe2e218ce5d83bf75ec98a43c8acf9928d4ef2dc",
+    "definitions": [
+      "MODALITY_ORDER",
+      "rank_units"
+    ]
+  },
+  {
+    "module": "evidence/packing.py",
+    "source_sha256": "513afb1104f02e129b2539f8f919ec9c4d78008f457813d1fffe2e318d4e5647",
+    "definitions": [
+      "POLICIES",
+      "unit_bytes",
+      "pack_units"
+    ]
+  },
+  {
+    "module": "studies/invariance/bounded.py",
+    "source_sha256": "7de276f5d6643fe6b2b6d9cf7a22661502f53378661de7791455dbcb0952f272",
+    "definitions": [
+      "identity_repeat",
+      "order",
+      "temporal_origin",
+      "serialization",
+      "topology_serialization"
+    ]
+  },
+  {
+    "module": "evidence/validators.py",
+    "source_sha256": "59f0a6ea5cbe4e4c5bd7124beb7a6379e71710180e0390eab4348758c8a5f22e",
+    "definitions": [
+      "unit_hash",
+      "unit_multiset",
+      "topology_multiset",
+      "validate_order",
+      "_relative",
+      "validate_temporal",
+      "validate_topology"
+    ]
+  },
+  {
+    "module": "stage3/protocol.py",
+    "source_sha256": "d17a72991e309d85bafd9d40e2397dceb163c74fe903fe2e0232c4795aa8c57d",
+    "definitions": [
+      "SYSTEM_PROMPT",
+      "OUTPUT_SCHEMA",
+      "PilotPrediction",
+      "_entity_rows",
+      "_evidence_rows",
+      "render_bounded_user_prompt",
+      "parse_prediction"
+    ]
+  }
+]

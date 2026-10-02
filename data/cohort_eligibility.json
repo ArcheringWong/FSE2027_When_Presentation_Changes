@@ -1,0 +1,3612 @@
+[
+  {
+    "dataset": "AIOps2025",
+    "case_id": "009be6db-313",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "01cf75fe-488",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "0410d710-226",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "04418665-287",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "046aefa7-170",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "0718e0f9-92",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "08e3187d-131",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "099ce7e2-274",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "0a373d08-149",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "0b81a605-339",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "0efb9550-160",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "0fccdcad-125",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1003cbad-421",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "10889e22-221",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1193b5d8-230",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "11cdd935-418",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "11f619f0-285",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "14c1047f-366",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "14cf33ba-256",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "162fe36a-151",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "168cdf19-153",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "178aa45f-353",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "18b8cf77-318",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "192019ef-486",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1c47d7bf-157",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1c4a277a-491",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1ef94bd7-352",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1fb24317-241",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "1fbef130-185",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "20622318-94",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "20f9c3bc-558",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "21aa302f-132",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "2272a5ff-138",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "233e0282-88",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "238afe01-573",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "25368410-268",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "25ce9c41-430",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "26c9ab68-91",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "271c6b09-108",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "27914c5a-288",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "27956295-84",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "28eb3b8c-552",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "29f88351-232",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "2cce5582-215",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "2e8873a5-370",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "33492fcd-575",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3400061d-135",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "343ba04c-129",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "345fbe93-80",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3600f326-158",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "36937f85-134",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "36e2b5c1-242",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "371ba498-375",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "37de08d4-269",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "38ee3d45-82",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3d284cf0-333",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3d3f68e9-554",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3d6c95dd-595",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3da57a36-286",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "3df3b41f-105",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "40424656-201",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4229b9c5-198",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "42c6ad6f-136",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "448bc5e0-559",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "45c7bf97-487",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4664a5e8-251",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "499d8ec0-211",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "49e9814e-266",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4ab999b7-96",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4b8e459c-272",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4b98f078-560",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4be46c92-236",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4e221a94-277",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "4fd42adb-327",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5028909d-391",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "51fc47bf-169",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "53212d72-224",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "535dd1bd-273",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "53ab3ccb-326",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "53d5d618-289",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "54002a5c-155",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "541f72de-115",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "555d145f-99",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "55759137-403",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "55791019-109",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "55b23e04-325",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5645565c-248",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "569f2ed5-572",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "56c934bb-205",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5934fe6f-561",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "593e3d6b-371",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5a573d9d-212",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5b520645-141",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5c8eb611-200",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5d022708-414",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "5d97906f-213",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6375ea10-98",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "652408d6-398",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6574656a-250",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "66cfe1dd-121",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6739d066-429",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "67ca80f6-415",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "68727566-367",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6892c835-177",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "68bbf4fd-332",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6a643823-196",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6a9c8dc7-498",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6d1ad486-497",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6e08f907-417",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6e8c4acb-219",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6ef260df-97",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "6f84e51d-140",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "71964944-254",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "741b801a-247",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "744d4e2b-106",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "74a44ae7-81",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "74bd0298-209",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7513dbaf-190",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "757fa56f-263",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "76222cb2-331",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "76937ba4-346",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7bd681bb-358",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7bdc4b83-164",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7c0d7152-359",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7d23b182-577",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7d463806-423",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7e03b07d-188",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7e54232b-275",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7e7b6ea4-228",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "7f595b45-181",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "84f4b04a-283",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "864797d5-271",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "87b43d57-223",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "88b7daff-343",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "88f808ff-426",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "89c85406-162",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "8c7ed41d-249",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "8cf433b4-122",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "913e1ecf-194",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "91c4c773-252",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "92e5a649-207",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "934844b2-156",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9450018e-372",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "94d48f2c-144",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "958ecb16-253",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "959cfb67-502",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "96e4b852-189",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "96fed9c7-427",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "97d37c35-186",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "980853cb-240",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "98eacd31-244",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "994849cc-180",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9a257bd5-150",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9b0004fb-390",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9b0d8a50-187",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9c3b8fe7-282",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9d5029d9-385",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "9f49250a-383",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a061c961-225",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a0761b38-172",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a0d5329b-489",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a0e512ba-384",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a2047792-382",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a363d826-117",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a42d2eb4-319",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a499f40d-202",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a54c75dc-111",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a63a0c8b-290",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a7ed866b-406",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a85d0720-120",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a9a3df0e-557",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "a9c6d6c9-159",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "aa100326-220",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "aa53ee7c-259",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "aba2da7f-368",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "abb62970-110",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ac8cf6cb-553",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ac9112a4-420",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "aceeda23-570",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ad030412-354",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ad84546c-124",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ae4abdbe-103",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b06baad3-363",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b168261d-355",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b1ab098d-83",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b1dff953-217",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b4feec3f-413",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b67cbc30-102",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b7177fa5-409",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b78dafc3-312",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b9539d8e-345",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "b96848a5-342",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ba74cb57-142",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bbfefe10-321",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bc2f1dfa-114",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bc454cd0-123",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bc6f6978-239",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bc9db995-235",
+    "candidate_representable": true,
+    "order_applicable": false,
+    "order_noop": true,
+    "historical_order_provider_call_present": false,
+    "replacement": false,
+    "status": "PRE_PROVIDER_ORDER_NOOP_EXCLUSION"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bd9203a8-568",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bdc8184e-246",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "be622d9e-412",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "bf022434-378",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c002ac2b-95",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c1e7d172-128",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c3377c5c-337",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c3f4fde9-330",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c4b46577-499",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c6e9faa0-270",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c730da7b-260",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c9832b3e-191",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c9ba0b22-566",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "c9fbd527-582",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cb5815ce-161",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cbd1f06b-565",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cc3b1830-139",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cc8e0450-593",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cd049902-400",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cd81a09b-101",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "cebb47f5-165",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d0c7cd07-267",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d0ecec7e-381",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d124f9b7-379",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d1e74aa8-214",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d32bcd36-104",
+    "candidate_representable": true,
+    "order_applicable": false,
+    "order_noop": true,
+    "historical_order_provider_call_present": false,
+    "replacement": false,
+    "status": "PRE_PROVIDER_ORDER_NOOP_EXCLUSION"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d3691ad9-492",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d3bd27f3-90",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d3dd6ed7-183",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d44478e6-328",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d4cf6596-245",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d8a41a9d-264",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d99a98a0-233",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "d9fb014e-206",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "dac96ecf-483",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "db4628f8-261",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "dc331a0b-118",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "dc62e30c-113",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "dce5cefa-147",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "de1d442d-197",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "de4a919c-126",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "de83df2d-281",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "df11e2f0-229",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "df892932-168",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e1562aa2-335",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e1b52df0-482",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e1c6a610-408",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e25d2429-203",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e2750b43-116",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e4dae239-284",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e4ef8a12-193",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e4ff5a70-231",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e539dea4-322",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e55fb1cb-192",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e566fa68-404",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e6c9989b-173",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e7648f7d-490",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "e955714b-280",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ed40c5a3-324",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ee69c707-234",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ee77456a-222",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ef2a4fbb-87",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f18b68cd-119",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f370cf6d-291",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f5d0349a-276",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f62b1785-258",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f643fe98-243",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f78ef469-175",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f887d7ff-238",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f99b1645-137",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "f9b9169c-407",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "fb327034-184",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "fc44280d-133",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "fe25ee9b-143",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "fe4efdc8-364",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "AIOps2025",
+    "case_id": "ffabbbb0-227",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t001",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t002",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t003",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t004",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t005",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t006",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t007",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t008",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t009",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t011",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t012",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t013",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t015",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t016",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t018",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t019",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t020",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t022",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t023",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t024",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t025",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t026",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t027",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t028",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t029",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t030",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t031",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t032",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t033",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t034",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t035",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t036",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t037",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t039",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t040",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t041",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t042",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t043",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t044",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t045",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t046",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t047",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t048",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t049",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t050",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t052",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t053",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t055",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t056",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t059",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t060",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t061",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t062",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t064",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t066",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t068",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t069",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t070",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t071",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t072",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t073",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t074",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t075",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t076",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t077",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t078",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t079",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t081",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t082",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t084",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t085",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t087",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t088",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t089",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t090",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t091",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t092",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t093",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t094",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t095",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t096",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t097",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t098",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t099",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t100",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t102",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  },
+  {
+    "dataset": "RCA100",
+    "case_id": "t103",
+    "candidate_representable": true,
+    "order_applicable": true,
+    "order_noop": false,
+    "historical_order_provider_call_present": true,
+    "replacement": false,
+    "status": "INCLUDED"
+  }
+]

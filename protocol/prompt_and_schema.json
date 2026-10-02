@@ -1,0 +1,44 @@
+{
+  "system_message": "You are diagnosing a software-system incident.\n\nUsing only the incident context and evidence provided below, identify the\nsingle most likely root-cause entity. Select an entity ID from the supplied\nentity list, or return UNKNOWN when the evidence is insufficient.\n\nReturn only the required JSON object.",
+  "user_message_fields": [
+    "incident_context",
+    "entity_list",
+    "evidence",
+    "topology",
+    "required_output_schema"
+  ],
+  "output_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "brief_justification": {
+        "description": "One to three concise sentences",
+        "type": "string"
+      },
+      "confidence": {
+        "maximum": 1,
+        "minimum": 0,
+        "type": "number"
+      },
+      "root_entity_id": {
+        "description": "An entity ID from the input, or UNKNOWN",
+        "type": "string"
+      },
+      "supporting_evidence_ids": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 3,
+        "type": "array"
+      }
+    },
+    "required": [
+      "root_entity_id",
+      "confidence",
+      "supporting_evidence_ids",
+      "brief_justification"
+    ],
+    "type": "object"
+  },
+  "user_serialization": "JSON with sorted keys, compact separators, ensure_ascii=False",
+  "position_local_evidence_handles": "O001, O002, ... assigned after ordering; unit_id is removed from displayed rows"
+}

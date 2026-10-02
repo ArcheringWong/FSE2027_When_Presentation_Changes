@@ -1,0 +1,292 @@
+# Selected original definitions for reading; not a standalone Python module.
+
+# Source module: evidence/compiler.py
+def estimate_sizes(payload: str) -> EstimatedRenderSizes:
+    return EstimatedRenderSizes(
+        utf8_bytes=len(payload.encode("utf-8")), characters=len(payload),
+        whitespace_tokens=len(payload.split()), tokens_equivalent_bytes_div4=round(len(payload.encode("utf-8")) / 4),
+    )
+
+def compile_evidence_units(base: BaseDiagnosticView):
+    codes = entity_codes(base)
+    aliases = alias_codes(base, codes)
+    by_modality = {name: [item for item in base.observations if item.modality == name] for name in ("metric", "log", "trace", "event", "alert")}
+    units = []
+    units.extend(aggregate_metrics(by_modality["metric"], codes))
+    units.extend(aggregate_logs(by_modality["log"], codes, aliases))
+    units.extend(aggregate_traces(by_modality["trace"], codes, aliases))
+    units.extend(aggregate_events(by_modality["event"] + by_modality["alert"], codes, aliases))
+    return rank_units(units), codes
+
+def compile_bounded_views(
+    base: BaseDiagnosticView, *, compiler_config_hash: str, entity_registry_reference: str,
+    compiler_code_version: str = "test-unversioned",
+    topology_node_cap: int = 32, topology_edge_cap: int = 64,
+) -> tuple[dict[str, BoundedDiagnosticView], dict[str, object]]:
+    ranked, codes = compile_evidence_units(base)
+    nodes, edges = bounded_topology(base, codes, topology_node_cap, topology_edge_cap)
+    # Account for topology plus stable view/config/provenance metadata outside unit payloads.
+    fixed = len(json.dumps({"nodes": [item.dict() for item in nodes], "edges": [item.dict() for item in edges]}).encode("utf-8")) + 6_000
+    results = {}
+    for policy_id in POLICIES:
+        selected = pack_units(ranked, policy_id, fixed)
+        provenance = sorted({item.source_provenance_hash for item in selected})
+        core = {
+            "dataset_name": base.dataset_name, "case_id": base.case_id,
+            "parent_base_view_hash": base.source_view_hash, "compiler_policy_id": policy_id,
+            "compiler_config_hash": compiler_config_hash,
+            "compiler_code_version": compiler_code_version,
+            "canonical_evidence_units": [item.dict() for item in selected],
+            "entity_registry_reference": entity_registry_reference,
+            "topology_nodes": [item.dict() for item in nodes], "topology_edges": [item.dict() for item in edges],
+            "source_provenance_hashes": provenance,
+        }
+        bounded_hash = stable_object_hash(core)
+        provisional = BoundedDiagnosticView(
+            **core, bounded_view_hash=bounded_hash,
+            estimated_render_sizes=EstimatedRenderSizes(utf8_bytes=0, characters=0, whitespace_tokens=0, tokens_equivalent_bytes_div4=0),
+        )
+        for _ in range(4):
+            sizes = estimate_sizes(_render_payload(provisional))
+            if sizes == provisional.estimated_render_sizes:
+                break
+            provisional.estimated_render_sizes = sizes
+        results[policy_id] = provisional
+    return results, {
+        "all_unit_count": len(ranked),
+        "all_unit_modality_counts": dict(Counter(item.modality for item in ranked)),
+        "topology_node_count": len(nodes), "topology_edge_count": len(edges),
+    }
+
+# Source module: evidence/ranking.py
+MODALITY_ORDER = {"alert": 0, "event": 1, "metric": 2, "log": 3, "trace": 4}
+
+def rank_units(units: list[EvidenceUnit]) -> list[EvidenceUnit]:
+    """Rank within modality, then fixed round-robin to avoid incomparable score scales."""
+    buckets = {
+        modality: sorted(
+            (item for item in units if item.modality == modality),
+            key=lambda item: (-item.public_rank_score, stable_object_hash(item.dict())),
+        )
+        for modality in MODALITY_ORDER
+    }
+    result = []
+    while any(buckets.values()):
+        for modality in MODALITY_ORDER:
+            if buckets[modality]:
+                result.append(buckets[modality].pop(0))
+    return result
+
+# Source module: evidence/packing.py
+POLICIES = {
+    "compact": {"target_utf8_bytes": 32_000, "max_units": 64},
+    "medium": {"target_utf8_bytes": 48_000, "max_units": 96},
+    "large": {"target_utf8_bytes": 64_000, "max_units": 128},
+}
+
+def unit_bytes(unit: EvidenceUnit) -> int:
+    return len(json.dumps(unit.dict(), ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8"))
+
+def pack_units(ranked: list[EvidenceUnit], policy_id: str, fixed_overhead_bytes: int) -> list[EvidenceUnit]:
+    policy = POLICIES[policy_id]
+    budget = max(1_000, policy["target_utf8_bytes"] - fixed_overhead_bytes)
+    selected, used = [], 0
+    for unit in ranked:
+        size = unit_bytes(unit)
+        if selected and (len(selected) >= policy["max_units"] or used + size > budget):
+            continue
+        selected.append(unit)
+        used += size
+    return selected
+
+# Source module: studies/invariance/bounded.py
+def identity_repeat(base: BoundedDiagnosticView) -> BoundedStudyVariant:
+    view = base.copy(deep=True)
+    passed = view.dict() == base.dict()
+    return BoundedStudyVariant(
+        variant_id=f"{base.dataset_name}:{base.case_id}:identity_repeat", transform="identity_repeat",
+        parent_bounded_view_hash=base.bounded_view_hash, view=view, validator_passed=passed,
+        validator_report={"passed": passed, "bitwise_typed_identity": passed},
+    )
+
+def order(base: BoundedDiagnosticView, seed: int) -> BoundedStudyVariant:
+    view = base.copy(deep=True)
+    random.Random(f"{seed}:{base.dataset_name}:{base.case_id}").shuffle(view.canonical_evidence_units)
+    report = validate_order(base, view)
+    return BoundedStudyVariant(
+        variant_id=f"{base.dataset_name}:{base.case_id}:order:{seed}", transform="evidence_order",
+        parent_bounded_view_hash=base.bounded_view_hash, seed=seed, view=view,
+        validator_passed=report["passed"], validator_report=report,
+    )
+
+def temporal_origin(base: BoundedDiagnosticView, delta_seconds: int) -> BoundedStudyVariant:
+    view = base.copy(deep=True)
+    delta = delta_seconds * 1_000_000_000
+    for unit in view.canonical_evidence_units:
+        for field in ("time_start_ns", "time_end_ns", "peak_timestamp_ns"):
+            value = getattr(unit, field)
+            if value is not None: setattr(unit, field, value + delta)
+    report = validate_temporal(base, view)
+    return BoundedStudyVariant(
+        variant_id=f"{base.dataset_name}:{base.case_id}:temporal:{delta_seconds}",
+        transform="temporal_origin", parent_bounded_view_hash=base.bounded_view_hash,
+        view=view, validator_passed=report["passed"], validator_report=report,
+    )
+
+def serialization(base: BoundedDiagnosticView):
+    json_payload, table_payload = render_json(base), render_table(base)
+    parsed_json, parsed_table = parse_json(json_payload), parse_table(table_payload)
+    passed = parsed_json.dict() == parsed_table.dict() == base.dict()
+    variant = BoundedStudyVariant(
+        variant_id=f"{base.dataset_name}:{base.case_id}:serialization", transform="serialization",
+        parent_bounded_view_hash=base.bounded_view_hash, view=parsed_table, validator_passed=passed,
+        validator_report={"passed": passed, "typed_roundtrip_equal": passed},
+    )
+    return variant, json_payload, table_payload
+
+def topology_serialization(base: BoundedDiagnosticView, seed: int) -> BoundedStudyVariant:
+    view = base.copy(deep=True)
+    rng = random.Random(f"topology:{seed}:{base.case_id}")
+    rng.shuffle(view.topology_nodes); rng.shuffle(view.topology_edges)
+    report = validate_topology(base, view)
+    return BoundedStudyVariant(
+        variant_id=f"{base.dataset_name}:{base.case_id}:topology:{seed}",
+        transform="topology_serialization", parent_bounded_view_hash=base.bounded_view_hash,
+        seed=seed, view=view, validator_passed=report["passed"], validator_report=report,
+    )
+
+# Source module: evidence/validators.py
+def unit_hash(unit: EvidenceUnit, exclude_time: bool = False) -> str:
+    data = unit.dict()
+    if exclude_time:
+        for key in ("time_start_ns", "time_end_ns", "peak_timestamp_ns"): data.pop(key, None)
+    return stable_object_hash(data)
+
+def unit_multiset(view: BoundedDiagnosticView, exclude_time: bool = False):
+    return Counter(unit_hash(item, exclude_time) for item in view.canonical_evidence_units)
+
+def topology_multiset(view: BoundedDiagnosticView):
+    return (
+        Counter(stable_object_hash(item.dict()) for item in view.topology_nodes),
+        Counter((item.source_entity_id, item.target_entity_id, item.relation, item.attributes_hash) for item in view.topology_edges),
+    )
+
+def validate_order(base: BoundedDiagnosticView, variant: BoundedDiagnosticView):
+    equal = unit_multiset(base) == unit_multiset(variant)
+    return {"passed": equal, "evidence_unit_multiset_equal": equal}
+
+def _relative(view: BoundedDiagnosticView):
+    values = {}
+    for unit in view.canonical_evidence_units:
+        for field in ("time_start_ns", "time_end_ns", "peak_timestamp_ns"):
+            value = getattr(unit, field)
+            if value is not None: values[f"{unit.unit_id}:{field}"] = value
+    origin = min(values.values()) if values else 0
+    return {key: value - origin for key, value in values.items()}
+
+def validate_temporal(base: BoundedDiagnosticView, variant: BoundedDiagnosticView):
+    relative = _relative(base) == _relative(variant)
+    non_time = unit_multiset(base, True) == unit_multiset(variant, True)
+    passed = relative and non_time
+    return {"passed": passed, "relative_timestamp_ns_equal": relative, "non_time_multiset_equal": non_time}
+
+def validate_topology(base: BoundedDiagnosticView, variant: BoundedDiagnosticView):
+    equal = topology_multiset(base) == topology_multiset(variant)
+    return {"passed": equal, "directed_topology_multiset_equal": equal}
+
+# Source module: stage3/protocol.py
+SYSTEM_PROMPT = """You are diagnosing a software-system incident.
+
+Using only the incident context and evidence provided below, identify the
+single most likely root-cause entity. Select an entity ID from the supplied
+entity list, or return UNKNOWN when the evidence is insufficient.
+
+Return only the required JSON object."""
+
+OUTPUT_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": ["root_entity_id", "confidence", "supporting_evidence_ids", "brief_justification"],
+    "properties": {
+        "root_entity_id": {"type": "string", "description": "An entity ID from the input, or UNKNOWN"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "supporting_evidence_ids": {
+            "type": "array", "maxItems": 3, "items": {"type": "string"},
+        },
+        "brief_justification": {"type": "string", "description": "One to three concise sentences"},
+    },
+}
+
+class PilotPrediction(StrictModel):
+    root_entity_id: str
+    confidence: float
+    supporting_evidence_ids: list[str] = Field(default_factory=list, max_items=3)
+    brief_justification: str
+
+    @validator("confidence")
+    def confidence_range(cls, value: float) -> float:
+        if not 0 <= value <= 1:
+            raise ValueError("confidence outside [0,1]")
+        return value
+
+    @validator("brief_justification")
+    def concise_justification(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("brief_justification is empty")
+        return value
+
+def _entity_rows(labels: Iterable[ActiveEntityLabel]) -> list[dict[str, Any]]:
+    return [
+        {"entity_id": item.canonical_entity_id, "display_name": item.display_name, "entity_type": item.entity_type}
+        for item in labels
+    ]
+
+def _evidence_rows(units: Iterable[EvidenceUnit]) -> tuple[list[dict[str, Any]], set[str]]:
+    rows, identifiers = [], set()
+    for index, unit in enumerate(units, 1):
+        display_id = f"O{index:03d}"
+        identifiers.add(display_id)
+        row = unit.dict()
+        row["evidence_id"] = display_id
+        row.pop("unit_id", None)
+        rows.append(row)
+    return rows, identifiers
+
+def render_bounded_user_prompt(
+    view: BoundedDiagnosticView,
+    labels: list[ActiveEntityLabel],
+    *,
+    topology_visible: bool = True,
+    table_layout: bool = False,
+) -> tuple[str, set[str], set[str]]:
+    evidence, evidence_ids = _evidence_rows(view.canonical_evidence_units)
+    body = {
+        "incident_context": {"dataset": view.dataset_name, "case_id": view.case_id},
+        "entity_list": _entity_rows(labels),
+        "evidence": evidence,
+        "topology": {
+            "nodes": [item.dict() for item in view.topology_nodes] if topology_visible else [],
+            "edges": [item.dict() for item in view.topology_edges] if topology_visible else [],
+        },
+        "required_output_schema": OUTPUT_SCHEMA,
+    }
+    if table_layout:
+        lines = ["INCIDENT INPUT"]
+        for key, value in body.items():
+            lines.append(f"{key.upper()}\t{json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'))}")
+        prompt = "\n".join(lines)
+    else:
+        prompt = json.dumps(body, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return prompt, {item.canonical_entity_id for item in labels}, evidence_ids
+
+def parse_prediction(raw_text: str, candidate_ids: set[str], evidence_ids: set[str]) -> tuple[PilotPrediction | None, str | None]:
+    try:
+        payload = json.loads(raw_text)
+        prediction = PilotPrediction.parse_obj(payload)
+    except Exception as exc:
+        return None, f"invalid_schema:{type(exc).__name__}"
+    if prediction.root_entity_id != "UNKNOWN" and prediction.root_entity_id not in candidate_ids:
+        return prediction, "invalid_prediction:out_of_candidate_set"
+    if any(item not in evidence_ids for item in prediction.supporting_evidence_ids):
+        return prediction, "invalid_prediction:out_of_evidence_set"
+    return prediction, None
